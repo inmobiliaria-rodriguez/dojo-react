@@ -3,15 +3,17 @@ import { ColorPalette } from '../constants';
 
 export const posterStyles = StyleSheet.create({
     container: {
-        width: 220,
-        height: 320,
-        borderWidth: 10,
-        borderColor: ColorPalette.PRIMARY,
-        backgroundColor: ColorPalette.PALE,
-        marginBottom: 'auto',
-        marginTop: 'auto',
-        alignItems: 'center',
-        justifyContent: 'center',
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    poster: {
+      width: 200,
+      height: 300,
+    },
+    year: {
+      marginTop: 10,
+      fontSize: 18, // Ajusta el tamaño de fuente según tus preferencias.
     },
     text: {
         color: ColorPalette.PRIMARY,
