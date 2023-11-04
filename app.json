@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5862d1b1-44ed-4b9f-89f4-af8d394ef6ef"
+      }
+    },
+    "owner": "andersonvs12"
   }
 }
