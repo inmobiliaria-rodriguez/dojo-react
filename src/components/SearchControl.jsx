@@ -6,20 +6,20 @@ import { ColorPalette } from '../constants';
 const SearchControl = ({ onSearch }) => {
     const [input, setInput] = useState();
 
-    <View style={searchControlStyles.container}>
-    <TextInput style={searchControlStyles.input} onChangeText={(text) => setInput(text)} value={input} />
-
-    <Pressable android_ripple={{ color: ColorPalette.PRIMARY }} style={searchControlStyles.button} onPress={() => onSearch(input)}>
-        <Text
-            style={{
-                color: ColorPalette.PRIMARY,
-                fontWeight: 'bold',
-            }}
-        >
-            Buscar Película
-        </Text>
-    </Pressable>
-</View>
+    return (<View style={searchControlStyles.container}>
+        <TextInput style={searchControlStyles.input} onChangeText={(text) => setInput(text)} value={input} />
+    
+        <Pressable android_ripple={{ color: ColorPalette.PRIMARY }} style={searchControlStyles.button} onPress={() => onSearch(input)}>
+            <Text
+                style={{
+                    color: ColorPalette.PRIMARY,
+                    fontWeight: 'bold',
+                }}
+            >
+                Buscar Película
+            </Text>
+        </Pressable>
+    </View>);
 };
 
 export default SearchControl;

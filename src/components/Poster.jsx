@@ -22,13 +22,13 @@ const Poster = ({ movies }) => {
         return () => clearInterval(interval);
     }, [movies]);
 
-    <View style={posterStyles.container}>
-    {activeMovie ? (
-        <Image source={{ uri: activeMovie.Poster }} style={{ width: 200, height: 300 }} />
-    ) : (
-        <Text style={posterStyles.text}>{activeMovie ? activeMovie : 'Sin datos de película'}</Text>
-    )}
-</View>
+    return (<View style={posterStyles.container}>
+        {activeMovie ? (
+            <Image source={{ uri: activeMovie.Poster }} style={{ width: 200, height: 300 }} />
+        ) : (
+            <Text style={posterStyles.text}>{activeMovie ? activeMovie : 'Sin datos de película'}</Text>
+        )}
+    </View>);
 };
 
 export default Poster;

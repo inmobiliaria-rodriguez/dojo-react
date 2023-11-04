@@ -29,17 +29,3 @@ export const searchControlStyles = StyleSheet.create({
     },
 });
 
-export const mainStyles = StyleSheet.create({
-    container: {
-        paddingTop: Expo.statusBarHeight,
-        flex: 1,
-        alignItems: 'center',
-        backgroundColor: ColorPalette.BOARD,
-    },
-    title: {
-        fontSize: 30,
-        fontWeight: 'bold',
-        marginBottom: 10,
-        color: ColorPalette.PRIMARY,
-    },
-});
